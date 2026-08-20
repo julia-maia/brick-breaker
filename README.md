@@ -67,4 +67,4 @@ flutter pub get
 flutter run
 ```
  
-Para gerar o APK de release, veja [04 - Geração do APK](docs/40-geracao-apk.md).
+Para gerar o APK de release, veja [04 - Geração do APK](docs/04-geracao-apk.md).
