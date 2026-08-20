@@ -21,7 +21,7 @@ Toda a documentação do projeto está organizada na pasta [`docs/`](docs/):
 | [01 - Ambiente e Tecnologias](docs/01-ambiente-tecnologias.md) | Ambiente de desenvolvimento, linguagens e ferramentas utilizadas |
 | [02 - Wireframes](docs/02-wireframes.md) | Wireframes em alta definição de todas as telas e níveis do jogo |
 | [03 - Construção das Paredes](docs/03-construcao-paredes.md) | Estratégia e métodos utilizados para construir as paredes de blocos |
-| [04 - Geração do APK](docs/04-geracao-apk.md) | Passo a passo para compilar e gerar o APK de release |
+| [00 - Geração do APK](docs/00-geracao-apk.md) | Passo a passo para compilar e gerar o APK de release |
  
 ## Tecnologias principais
  
@@ -67,4 +67,4 @@ flutter pub get
 flutter run
 ```
  
-Para gerar o APK de release, veja [04 - Geração do APK](docs/40-geracao-apk.md).
+Para gerar o APK de release, veja [00 - Geração do APK](docs/00-geracao-apk.md).
