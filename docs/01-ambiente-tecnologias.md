@@ -337,17 +337,7 @@ Os testes serão executados de forma incremental ao longo da implementação.
 
 ---
 
-## 15. Geração do APK
-
-A geração do APK foi separada em um documento específico, conforme o padrão do projeto: `00-geracao-apk.md`.
-
-Esse documento detalha as etapas de compilação, validação do ambiente Android, geração da build de release, instalação em emulador ou dispositivo e testes finais de execução.
-
-A partir dessa organização, o presente arquivo mantém o foco exclusivamente no ambiente de desenvolvimento, nas tecnologias adotadas e na justificativa técnica da solução.
-
----
-
-## 16. Relação entre as tecnologias e os requisitos
+## 15. Relação entre as tecnologias e os requisitos
 
 A escolha tecnológica está diretamente relacionada aos requisitos do projeto:
 
@@ -367,7 +357,7 @@ A escolha tecnológica está diretamente relacionada aos requisitos do projeto:
 
 ---
 
-## 17. Justificativa da escolha tecnológica
+## 16. Justificativa da escolha tecnológica
 
 A combinação de **Flutter, Dart e Flame** foi escolhida por atender de forma integrada às necessidades do projeto.
 
@@ -379,7 +369,7 @@ Essa combinação proporciona uma estrutura adequada para implementar os requisi
 
 ---
 
-## 18. Considerações finais
+## 17. Considerações finais
 
 O ambiente definido para o desenvolvimento do projeto é composto por **Flutter e Dart**, utilizando a **Flame Engine** para os elementos específicos do jogo, **Visual Studio Code** e **Android Studio** como ferramentas de desenvolvimento e teste, e **Git/GitHub** para controle de versão e colaboração.
 
@@ -389,7 +379,7 @@ Ao final do processo, será disponibilizado um APK de release correspondente à 
 
 ---
 
-## 19. Referências
+## 18. Referências
 
 - Flutter. **Cookbook**. Documentação oficial.  
   https://docs.flutter.dev/cookbook
