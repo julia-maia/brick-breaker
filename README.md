@@ -43,8 +43,9 @@ brick-breaker/
 │   └── 03-construcao-paredes.md
 ├── wireframes/
 │   ├── tela-inicial.png
-│   ├── tela-integrantes.png
+│   ├── tela-desenvolvedores.png
 │   ├── tela-configuracoes.png
+|   ├── tela-sair-jogo.png
 │   ├── tela-jogo.png
 │   ├── nivel-01.png
 │   ├── nivel-02.png
