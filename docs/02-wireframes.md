@@ -43,6 +43,8 @@ A tela inicial apresenta o menu principal do jogo e concentra as opções de nav
 ![Wireframe da tela inicial](../wireframes/tela-inicial.png)
 
 _Imagem: `wireframes/tela-inicial.png`._
+
+
 ## 4. Tela de configurações
 
 A tela de configurações permite alterar características visuais dos blocos antes ou durante o uso do jogo. Estão previstas as seguintes opções:
@@ -72,3 +74,30 @@ Ao selecionar a opção **Sair** na tela inicial, o aplicativo exibe uma tela ou
 ![Wireframe da confirmação para sair do jogo](../wireframes/tela-sair-jogo.png)
 
 _Imagem: `wireframes/tela-sair-jogo.png`._
+## 7. Níveis do jogo
+
+Os níveis representam a estrutura da parede que deve ser destruída ao longo da partida. Cada fase mantém a mesma base visual do jogo, com a bola na parte central e a raquete na base da tela, porém a formação dos blocos muda para aumentar ou reduzir o desafio.
+
+### Nível 1
+
+O primeiro nível possui uma parede mais simples e uniforme, com blocos organizados de forma regular para introduzir o sistema de colisão e a dinâmica do jogo.
+
+![Wireframe do nível 1](../wireframes/nivel-01.png)
+
+_Imagem: `wireframes/nivel-01.png`._
+
+### Nível 2
+
+No segundo nível, a parede passa a apresentar pequenos espaços vazios entre os blocos, gerando uma disposição mais irregular e exigindo maior precisão na trajetória da bola.
+
+![Wireframe do nível 2](../wireframes/nivel-02.png)
+
+_Imagem: `wireframes/nivel-02.png`._
+
+### Nível 3
+
+O terceiro nível apresenta uma estrutura mais complexa, com blocos distribuídos de maneira menos previsível. Essa configuração oferece maior dificuldade e exige uma estratégia mais cuidadosa para destruir a parede.
+
+![Wireframe do nível 3](../wireframes/nivel-03.png)
+
+_Imagem: `wireframes/nivel-03.png`._
