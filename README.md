@@ -6,11 +6,11 @@ O jogo consiste em controlar uma plataforma (paddle) para rebater uma bola e des
 
 ## Equipe
 
-- Gabriel Souza
-- Luís Carlos Gomes Lopes Filho
-- Julia Brambatti Pereira
-- Maicon Casagranda Pinto
 - Ayla Djan Anjos Abreu
+- Gabriel Souza
+- Julia Brambatti Pereira
+- Luís Carlos Gomes Lopes Filho
+- Maicon Casagranda Pinto
 
 ## Documentação
 
