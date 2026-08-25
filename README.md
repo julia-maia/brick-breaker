@@ -6,11 +6,11 @@ O jogo consiste em controlar uma plataforma (paddle) para rebater uma bola e des
 
 ## Equipe
 
-- Gabriel Souza
-- Luís Carlos Gomes Lopes Filho
-- Julia Brambatti Pereira
-- Maicon Casagranda Pinto
 - Ayla Djan Anjos Abreu
+- Gabriel Souza
+- Julia Brambatti Pereira
+- Luís Carlos Gomes Lopes Filho
+- Maicon Casagranda Pinto
 
 ## Documentação
 
@@ -43,8 +43,9 @@ brick-breaker/
 │   └── 03-construcao-paredes.md
 ├── wireframes/
 │   ├── tela-inicial.png
-│   ├── tela-integrantes.png
+│   ├── tela-desenvolvedores.png
 │   ├── tela-configuracoes.png
+|   ├── tela-sair-jogo.png
 │   ├── tela-jogo.png
 │   ├── nivel-01.png
 │   ├── nivel-02.png
