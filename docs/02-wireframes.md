@@ -9,13 +9,27 @@ A tela inicial funciona como ponto de entrada para as demais funcionalidades. A 
 
 O fluxo principal pode ser representado da seguinte maneira:
 ```text
-					Tela inicial
-				/        |        |        \
-				   v         v        v         v
-			  Iniciar   Configurações  Desenvolvedores  Sair
-				  |
-									v
-								Jogo
+                    Tela Inicial
+                         |
+          +--------------+--------------+-------------------+
+          |              |              |                   |
+          v              v              v					v
+     Integrantes      Iniciar       Configurações		Tela Saída
+                         |              |					|
+                         v              v					v
+                      Nível 1       Ajustes				Sim ou não?  -> Retorna para Tela Inicial
+                         |								 |      
+                         v								 v
+                      Nível 2					  Encerra o jogo
+                         |
+                         v
+                      Nível 3
+                         |
+                         v
+                      Nível 4
+                         |
+                         v
+                      Nível 5
 ```
 ## 3. Tela inicial
 
@@ -54,28 +68,5 @@ Ao selecionar a opção **Sair** na tela inicial, o aplicativo exibe uma tela ou
 | Não | Cancela a ação e retorna à tela inicial. |
 
 ![Wireframe da confirmação para sair do jogo](../wireframes/tela-sair-jogo.png)
+
 _Imagem: `wireframes/tela-sair-jogo.png`._
-
-## 7. Diretrizes de implementação
-Durante a implementação, as telas devem respeitar a organização apresentada nos wireframes e manter uma navegação previsível para o usuário. Os botões devem possuir rótulos claros e executar as ações correspondentes, enquanto as configurações selecionadas devem ser preservadas para a montagem visual do jogo.
-Os wireframes representam a estrutura inicial da interface. Cores, espaçamentos e dimensões podem ser ajustados durante o desenvolvimento para garantir boa visualização em dispositivos móveis, sem alterar o fluxo definido neste documento.
-
-## 8. Conclusão
-Os wireframes definem as telas iniciais, de configurações, de desenvolvedores e de confirmação para sair do jogo. Essa definição serve como referência para a construção da interface no Flutter e para a integração com a área de jogo do **Brick Breaker**.
-tela-sair-jogo
-
-Tela de confirmação para sair do jogo. Caso sim, o jogo encerra. Caso não, volta para a tela inifical.
-
-tela-configuracoes
-
-Mostra as configurações disponíveis e editáveis quanto ao design do jogo, incluindo duas opções de cores (cinza ou preto), além do tamanho dos tijolos (pequeno ou grande), variando conforme escolha do jogador.
-Possui o botão de voltar que retorna para a tela inicial.
-
-tela-desenvolvedores
-
-Disponibiliza o nome completo dos integrantes que desenvolveram o projeto, possuindo o botão de voltar que retorna para a tela inicial.
-
-tela-inicial
-
-Tela inicial do jogo com os botõs iniciar, configurações, desenvolvedores e sair.
-O botão iniciar iniciar o jogo, o configurações vai para a tela-configuracoes, o botão desenvolvedores para a tela-desenvolvedores e o sair para a tela-sair-jogo.
