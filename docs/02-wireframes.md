@@ -50,12 +50,14 @@ A tela de configurações permite alterar características visuais dos blocos an
 - tamanho dos tijolos: pequeno ou grande.
 
 As escolhas realizadas pelo jogador devem ser consideradas na montagem da parede de blocos. O botão de voltar retorna à tela inicial.
+
 ![Wireframe da tela de configurações](../wireframes/tela-configuracoes.png)
 
 _Imagem: `wireframes/tela-configuracoes.png`._
 ## 5. Tela de desenvolvedores
 
 A tela de desenvolvedores apresenta o nome completo dos integrantes responsáveis pelo desenvolvimento do projeto. Essa tela possui um botão de voltar, que direciona o usuário novamente para a tela inicial.
+
 ![Wireframe da tela de desenvolvedores](../wireframes/tela-desenvolvedores.png)
 
 _Imagem: `wireframes/tela-desenvolvedores.png`._
