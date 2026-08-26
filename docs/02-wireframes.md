@@ -101,3 +101,19 @@ O terceiro nível apresenta uma estrutura mais complexa, com blocos distribuído
 ![Wireframe do nível 3](../wireframes/nivel-03.png)
 
 _Imagem: `wireframes/nivel-03.png`._
+
+### Nível 4
+
+O quarto nível apresenta duas formações distintas de blocos, com os blocos cinzas concentrados à esquerda e os blocos pretos distribuídos à direita. Essa organização cria diferentes áreas de contato para a bola, exigindo atenção para controlar sua trajetória e alcançar todos os blocos.
+
+![Wireframe do nível 4](../wireframes/nivel-04.png)
+
+_Imagem: `wireframes/nivel-03.png`._
+
+### Nível 5
+
+O quinto nível apresenta uma estrutura mais organizada, com os blocos pretos formando uma cruz na região superior e os blocos cinzas distribuídos em uma linha horizontal abaixo. Essa configuração cria uma barreira central e exige maior controle da trajetória da bola para atingir os diferentes grupos de blocos.
+
+![Wireframe do nível 5](../wireframes/nivel-05.png)
+
+_Imagem: `wireframes/nivel-05.png`._
