@@ -1,6 +1,6 @@
 class Level {
   final int number;
-  
+
   /// 0 = vazio
   /// 1 = tijolo preto
   /// 2 = tijolo cinza
