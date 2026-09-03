@@ -94,6 +94,14 @@ O nome do arquivo geralmente inclui a versão final da aplicação, como `app-re
 
 ---
 
+Para o projeto final o arquivo será salvo do diretório mencionado abaixo:
+
+```text
+releases/
+```
+
+Com o arquivo renomeado para `brick-breaker.apk`, para melhor entendimento.
+
 ## 7. Geração de build debug
 
 Em alguns casos, pode ser útil gerar uma versão de depuração para testes rápidos.

@@ -37,10 +37,12 @@ brick-breaker/
 │
 ├── README.md
 ├── docs/
-│   ├── 00-geracao-apk.md
 │   ├── 01-ambiente-tecnologias.md
 │   ├── 02-wireframes.md
-│   └── 03-construcao-paredes.md
+│   ├── 03-construcao-paredes.md
+│   └── 04-geracao-apk.md
+├── releases/
+│   └── brick-breaker.apk
 ├── wireframes/
 │   ├── tela-inicial.png
 │   ├── tela-desenvolvedores.png
@@ -52,13 +54,16 @@ brick-breaker/
 │   ├── nivel-03.png
 │   ├── nivel-04.png
 │   └── nivel-05.png
-├── assets/
-│   ├── images/
-│   └── audio/
-├── lib/
-├── android/
-├── test/
-└── pubspec.yaml
+├── flutter_application/
+|   ├── lib/
+|        ├── assets/ 
+|        │   ├── fonts/
+|        │   ├── images/
+|        │   ├── sounds/
+|        ├── src/
+|   ├── android/
+|   ├── test/
+└── └── pubspec.yaml
 ```
 
 ## Como rodar o projeto
@@ -67,5 +72,10 @@ brick-breaker/
 flutter pub get
 flutter run
 ```
- 
+Para instalar o arquivo APK do aplicativo Brick Breaker já em processo final e funcional, clique no link abaixo:
+
+Instalar arquivo APK [brick-breaker.apk](releases/brick-breaker.apk).
+
+Em caso de dúvida siga os passos da documentação abaixo:
+
 Para gerar o APK de release, veja [04 - Geração do APK](docs/04-geracao-apk.md).
