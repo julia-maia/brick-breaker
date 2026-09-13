@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 import '../levels/levels.dart';
 import '../models/ball.dart';
@@ -9,6 +10,7 @@ import '../models/game_settings.dart';
 import '../models/paddle.dart';
 
 class GameController {
+  final AudioPlayer _sfxPlayer = AudioPlayer()..audioCache.prefix = '';
   final GameSettings settings;
 
   late Ball ball;
@@ -31,6 +33,10 @@ class GameController {
   // ============================================================
 
   void initialize({required Size gameSize}) {
+    preloadSounds();
+
+    gameOver = false;
+
     ball = Ball(
       x: gameSize.width / 2 - 9,
       y: gameSize.height * 0.62,
@@ -41,6 +47,8 @@ class GameController {
     paddle = Paddle(x: (gameSize.width - 120) / 2, y: gameSize.height - 70);
 
     _loadLevel(gameSize: gameSize, levelIndex: currentLevel);
+
+    playStart();
   }
 
   // ============================================================
@@ -127,6 +135,7 @@ class GameController {
       return;
     }
 
+
     final Rect ballRect = Rect.fromLTWH(ball.x, ball.y, ball.size, ball.size);
 
     final Rect paddleRect = Rect.fromLTWH(
@@ -139,6 +148,10 @@ class GameController {
     if (!ballRect.overlaps(paddleRect)) {
       return;
     }
+    _sfxPlayer.stop().then((_) {
+        _sfxPlayer.play(AssetSource('lib/assets/sounds/colisao.wav'));
+    });
+
 
     // Retira a bola de dentro do paddle.
     ball.y = paddle.y - ball.size;
@@ -257,7 +270,10 @@ class GameController {
 
   void _checkBallOutOfScreen(Size gameSize) {
     if (ball.y > gameSize.height) {
-      gameOver = true;
+      if (!gameOver) {
+        gameOver = true;
+        playFail();
+      }
     }
   }
 
@@ -287,6 +303,8 @@ class GameController {
     _loadLevel(gameSize: gameSize, levelIndex: currentLevel);
 
     _resetBall(gameSize);
+
+    playStart();
 
     return true;
   }
@@ -386,4 +404,20 @@ class GameController {
 
     paddle.x = (gameSize.width - paddle.width) / 2;
   }
-}
+      Future<void> preloadSounds() async {
+          await _sfxPlayer.setPlayerMode(PlayerMode.lowLatency);
+          await _sfxPlayer.audioCache.load('lib/assets/sounds/colisao.wav');
+          await _sfxPlayer.audioCache.load('lib/assets/sounds/start.wav');
+          await _sfxPlayer.audioCache.load('lib/assets/sounds/fail.wav');
+      }
+
+      void playStart() async {
+        await _sfxPlayer.stop();
+        await _sfxPlayer.play(AssetSource('lib/assets/sounds/start.wav'));
+      }
+
+      void playFail() async {
+        await _sfxPlayer.stop();
+        await _sfxPlayer.play(AssetSource('lib/assets/sounds/fail.wav'));
+      }
+  }
